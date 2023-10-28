@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Formulários</h1>
+    <form>
+      <label>Seu nome</label>
+      <input type="text" placeholder="nome" />
+      <br />
+      <label for="email">Seu e-mail</label>
+      <input id="email" type="email" placeholder="Email" />
+      <br />
+      <label for="telefone">Seu Telefone</label>
+      <input type="tel" placeholder="Seu Telefone" id="telefone" />
+      <br />
+      <label for="number">Digite um número</label>
+      <input
+        type="number"
+        max="20"
+        min="-20"
+        placeholder="Number"
+        id="number"
+        step="2"
+      />
+      <br />
+      <label for="file">Escolha um arquivo:</label>
+      <input type="file" name="choose_file" id="file" /><br />
+      <label for="cor">escolha a cor</label>
+      <input type="color" name="cores" id="cor" /><br />
+      <label for="seleçao">Marque opções</label>
+      <input type="checkbox" name="checkbox" id="seleçao" />
+      <p>Qual sua cor favorita?</p>
+      <label for="Pesquisa">Selecione sua opção</label><br />
+      <input type="radio" name="cor" id="Cor-Vermelha" placeholder="vermelho" />
+      <label for="Cor-Vermelha">vermelho</label>
+      <br />
+      <input type="radio" name="cor" id="Cor-Azul" />
+      <label for="Cor-Azul">azul</label>
+      <br />
+      <input type="radio" name="cor" id="Cor-Roxa" />
+      <label for="Cor-Roxa">roxo</label>
+      <hr />
+      <label>Qual é o seu filme favorito?</label>
+      <select name="filme" id="filmes" multiple>
+        <option value="">filme A</option>
+        <option value="">filme B</option>
+        <option value="">filme C</option>
+      </select>
+      <br />
+      <textarea
+        name="Caixa de texto"
+        id="Caixa-texto"
+        cols="30"
+        rows="10"
+      ></textarea
+      ><br />
+      <button type="submit">Enviar formulário</button>
+      <button type="reset">Limpar</button>
+    </form>
+  </body>
+</html>
